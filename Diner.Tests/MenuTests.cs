@@ -22,22 +22,17 @@ namespace Diner.Tests
 
             Assert.AreEqual(25.50, salmon.Price);
             Assert.AreEqual("Salmon", salmon.Title);
-
-
-
         }
 
         [TestMethod]
         public void AddsMenuItemToMenu()
         {
             MenuItem cupcake = new MenuItem();
-
             Menu summerMenu = new Menu();
 
             summerMenu.items.Add(cupcake);
 
             Assert.IsTrue(summerMenu.items.Contains(cupcake));
-
         }
 
     }
