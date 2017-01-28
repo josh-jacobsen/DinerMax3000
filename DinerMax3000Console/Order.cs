@@ -14,5 +14,18 @@ namespace DinerMax3000Console
             items = new List<MenuItem>();
         }
         public List<MenuItem> items; // = new List<MenuItem>();
+
+        public double OrderTotal
+        {
+            get
+            {
+                double calculatedTotal = 0;
+                foreach (MenuItem item in items)
+                {
+                    calculatedTotal = calculatedTotal + item.Price;
+                }
+                return calculatedTotal;
+            }
+        }
     }
 }
