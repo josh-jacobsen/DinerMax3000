@@ -11,7 +11,7 @@ namespace Diner.Tests
     [TestClass]
     public class MenuTests
     {
-   
+
         [TestMethod]
         public void CreatesMenuItem()
         {
@@ -29,10 +29,49 @@ namespace Diner.Tests
         {
             MenuItem cupcake = new MenuItem();
             Menu summerMenu = new Menu();
+            summerMenu.Name = "Summer menu";
 
             summerMenu.items.Add(cupcake);
 
             Assert.IsTrue(summerMenu.items.Contains(cupcake));
+        }
+
+        [TestMethod]
+        public void DefineMenuName()
+        {
+            Menu winterMenu = new Menu();
+            winterMenu.Name = "Winter menu";
+
+            Assert.AreEqual("Winter menu", winterMenu.Name);
+
+        }
+        [TestMethod]
+        public void AddMenuItem()
+        {
+            Menu summerMenu = new Menu();
+            summerMenu.AddMenuItem("Raisens", "Dried fruit", 2.0);
+
+
+            Assert.AreEqual("Raisens", summerMenu.items[0].Title);
+
+        }
+        [TestMethod]
+        public void CreatesFoodMenu()
+        {
+            FoodMenu foodMenu = new FoodMenu();
+            foodMenu.AddMenuItem("Fries", "Potatoe chips", 5.0);
+            Assert.AreEqual("Fries", foodMenu.items[0].Title);
+        }
+
+        [TestMethod]
+        public void CreateOrder()
+        {
+            Order customerOrder = new Order();
+            MenuItem orderItem = new MenuItem();
+            orderItem.Title = "Everything";
+            customerOrder.items.Add(orderItem);
+            Assert.AreEqual("Everything", customerOrder.items[0].Title);
+
         }
 
     }
