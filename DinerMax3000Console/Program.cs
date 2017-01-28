@@ -36,7 +36,8 @@ namespace DinerMax3000Console
             {
                 Console.WriteLine(item.Title);
             }
-            
+
+            Console.WriteLine("this is more about leaning the commit message syntax");
 
             Console.WriteLine("$Title: {0} -- Description: {1}", outsideDrinks.items[0].Title, outsideDrinks.items[0].Description);
             Console.WriteLine(outsideDrinks.Disclaimer);
