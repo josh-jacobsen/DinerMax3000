@@ -17,6 +17,16 @@ namespace DinerMax3000Console
             summerMenu.AddMenuItem("Beans", "The magical fruit", 5.50);
             summerMenu.AddMenuItem("Tofu", "Vegaterian meat", 15.50);
 
+            try
+            {
+                summerMenu.AddMenuItem("Expired Item", "Moudly cheese and bread", -100.00);
+
+            }
+            catch (Exception thrownException)
+            {
+                Console.WriteLine(thrownException.Message);
+            }
+
             summerMenu.HospitalDirections = "Turn left at the falafel stand";
 
             DrinksMenu outsideDrinks = new DrinksMenu();
@@ -25,7 +35,7 @@ namespace DinerMax3000Console
              
             Order hungryGuestOrder = new Order();
 
-            for (int i = 0; i < summerMenu.items.Count-1; i++)
+            for (int i = 0; i < summerMenu.items.Count; i++)
             {
                 MenuItem currentItem = summerMenu.items[i];
                 hungryGuestOrder.items.Add(currentItem);
@@ -36,6 +46,7 @@ namespace DinerMax3000Console
             {
                 Console.WriteLine(item.Title);
             }
+
 
             Console.WriteLine("this is more about leaning the commit message syntax");
 

@@ -13,6 +13,7 @@ namespace DinerMax3000Console
         {
             items = new List<MenuItem>();
         }
+
         public List<MenuItem> items; // = new List<MenuItem>();
 
         public double OrderTotal
