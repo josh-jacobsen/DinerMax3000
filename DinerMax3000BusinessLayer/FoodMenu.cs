@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DinerMax3000BusinessLayer
+namespace DinerMax3000.Business
 {
-    public class Class1
+    public class FoodMenu : Menu
     {
-
+        public string HospitalDirections;
     }
 }

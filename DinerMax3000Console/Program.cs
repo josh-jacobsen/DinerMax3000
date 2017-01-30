@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DinerMax3000.Business;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

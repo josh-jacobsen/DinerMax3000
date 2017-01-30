@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DinerMax3000Console
+namespace DinerMax3000.Business
 {
-    public class FoodMenu : Menu
+    public class DrinksMenu:Menu
     {
-        public string HospitalDirections;
+        public string Disclaimer;
     }
 }
