@@ -1,4 +1,5 @@
-﻿using DinerMax3000Console;
+﻿using DinerMax3000.Business;
+using DinerMax3000Console;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,17 @@ namespace Diner.Tests
     [TestClass]
     public class MenuTests
     {
+
+        [TestMethod]
+
+        public void GetsMenusFromDB()
+        {
+            List<Menu> menusFromDatabase = Menu.GetAllMenus();
+
+
+
+
+        }
 
         [TestMethod]
         public void CreatesMenuItem()

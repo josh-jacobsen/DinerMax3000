@@ -54,6 +54,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DinerMax3000BusinessLayer\DinerMax3000BusinessLayer.csproj">
+      <Project>{41c39446-7be1-4514-9a0b-b98b99ad2349}</Project>
+      <Name>DinerMax3000BusinessLayer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DinerMax3000Console\DinerMax3000Console.csproj">
       <Project>{3fcec209-0db1-48ae-872d-31c112b20bab}</Project>
       <Name>DinerMax3000Console</Name>
