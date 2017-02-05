@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diner.Tests", "Diner.Tests\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DinerMax3000BusinessLayer", "DinerMax3000BusinessLayer\DinerMax3000BusinessLayer.csproj", "{41C39446-7BE1-4514-9A0B-B98B99AD2349}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DinerMax3000WPFClient", "DinerMax3000WPFClient\DinerMax3000WPFClient.csproj", "{43207F5F-564D-40BF-8C9F-B3E5A1AE70E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{41C39446-7BE1-4514-9A0B-B98B99AD2349}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41C39446-7BE1-4514-9A0B-B98B99AD2349}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41C39446-7BE1-4514-9A0B-B98B99AD2349}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43207F5F-564D-40BF-8C9F-B3E5A1AE70E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43207F5F-564D-40BF-8C9F-B3E5A1AE70E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43207F5F-564D-40BF-8C9F-B3E5A1AE70E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43207F5F-564D-40BF-8C9F-B3E5A1AE70E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

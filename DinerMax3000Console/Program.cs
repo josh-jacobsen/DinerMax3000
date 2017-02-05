@@ -13,8 +13,6 @@ namespace DinerMax3000Console
         {
 
             List<Menu> menusFromDatabase = Menu.GetAllMenus();
-            //menusFromDatabase[0].AddNewMenuItem("Smorgas", "Something the Norges like", 7.50);
-            //menusFromDatabase = Menu.GetAllMenus();
 
             for (int i = 0; i < menusFromDatabase.Count; i++)
             {
