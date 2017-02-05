@@ -20,7 +20,9 @@
             <ColumnDefinition Width="100*"/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.ColumnSpan="2" Grid.RowSpan="2">
-            <ComboBox ItemsSource="{Binding AllMenus}" DisplayMemberPath="Name"/>
+            <ComboBox SelectedItem="{Binding SelectedMenu}" ItemsSource="{Binding AllMenus}" DisplayMemberPath="Name"/>
+            <DataGrid ItemsSource="{Binding SelectedMenu.items}"/>
+
         </StackPanel>
 
     </Grid>
