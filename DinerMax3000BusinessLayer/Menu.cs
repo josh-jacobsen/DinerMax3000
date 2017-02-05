@@ -9,7 +9,6 @@ namespace DinerMax3000.Business
 {
     public class Menu
     {
-        public List<MenuItem> items; // = new List<MenuItem>();
 
         public Menu()
         {
@@ -58,6 +57,9 @@ namespace DinerMax3000.Business
 
         }
 
-        public string Name;
+        public string Name { get; set; }
+
+        public List<MenuItem> items { get; set; } // = new List<MenuItem>();
+
     }
 }
