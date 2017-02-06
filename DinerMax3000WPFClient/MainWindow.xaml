@@ -20,8 +20,9 @@
             <ColumnDefinition Width="100*"/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.ColumnSpan="2" Grid.RowSpan="2">
-            <ComboBox SelectedItem="{Binding SelectedMenu}" ItemsSource="{Binding AllMenus}" DisplayMemberPath="Name"/>
-            <DataGrid ItemsSource="{Binding SelectedMenu.items}"/>
+            <ComboBox Name="cboAllMenus" SelectedItem="{Binding SelectedMenu}" ItemsSource="{Binding AllMenus}" DisplayMemberPath="Name"/>
+            <DataGrid CanUserAddRows="True" ItemsSource="{Binding SelectedMenu.items}" RowEditEnding="DataGrid_RowEditEnding"/>
+                  <Button Click="Button_Click">Save all new menu items</Button>
 
         </StackPanel>
 

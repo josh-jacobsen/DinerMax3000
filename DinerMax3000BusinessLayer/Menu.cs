@@ -17,7 +17,7 @@ namespace DinerMax3000.Business
 
         private int _databaseId;
 
-        public void AddNewMenuItem(string Title, string Description, double Price)
+        public void SaveNewMenuItem(string Title, string Description, double Price)
         {
             MenuItemTableAdapter taMenuItem = new MenuItemTableAdapter();
             taMenuItem.InsertNewMenuItem(Title, Description, Price, _databaseId);
